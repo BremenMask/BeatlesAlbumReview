@@ -1,5 +1,6 @@
+using Microsoft.AspNetCore.Mvc;
+using ReviewsSite.Controllers;
 using System;
-using System.Web.Mvc;
 using Xunit;
 
 namespace ReviewsSite.Tests
