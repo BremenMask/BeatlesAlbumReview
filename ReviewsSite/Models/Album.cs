@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 namespace ReviewsSite.Models
 {
     public class Album
-    {
+    {   
+        public int Id { get; set; }
         public Album()
         {
 
         }
 
-
+        public Album(int id)
+        {
+            Id = id;
+        }
     }
 }
