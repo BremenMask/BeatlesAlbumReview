@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using ReviewsSite.Controllers;
+using ReviewsSite.Models;
 using System;
 using Xunit;
 
@@ -7,15 +8,29 @@ namespace ReviewsSite.Tests
 {
     public class AlbumControllerTests
     {
+        AlbumController sut;
+
+        public AlbumControllerTests()
+        {
+            sut = new AlbumController();
+        }
+
         [Fact]
         public void Index_Returns_View()
         {
-            // Arrange
-            AlbumController sut = new AlbumController();
+
             // Act
             var result = sut.Index();
             // Assert
             Assert.IsType<ViewResult>(result);
+        }
+
+        [Fact]
+        public void Index_Returns_AlbumModel_To_View()
+        {
+            var result = sut.Index();
+
+            Assert.IsType<Album>(result.Model);
         }
     }
 }
