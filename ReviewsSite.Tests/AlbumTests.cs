@@ -11,7 +11,7 @@ namespace ReviewsSite.Tests
         Album sut;
         public AlbumTests()
         {
-            sut = new Album(1, "Album name", "Album description");
+            sut = new Album(1, "Album name", "Album description", "Album category");
         }
 
         [Fact]
@@ -37,7 +37,13 @@ namespace ReviewsSite.Tests
             Assert.Equal("Album description", result);
         }
 
+        [Fact]
+        public void AlbumConstructor_Sets_Category_On_CourseModel()
+        {
+            string result = sut.Category;
 
+            Assert.Equal("Album category", result);
+        }
 
     }
 }

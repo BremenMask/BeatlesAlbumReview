@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ReviewsSite.Controllers;
 using ReviewsSite.Models;
-using System;
+using System.Collections.Generic;
 using Xunit;
 
 namespace ReviewsSite.Tests
@@ -30,7 +30,7 @@ namespace ReviewsSite.Tests
         {
             var result = sut.Index();
 
-            Assert.IsType<Album>(result.Model);
+            Assert.IsType<List<Album>>(result.Model);
         }
     }
 }

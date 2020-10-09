@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<ReviewsSite.Models.Album> 
 @{
     Layout = null;
 }
@@ -11,6 +11,12 @@
     <title>Across the Universe</title>
 </head>
 <body>
-    <h1>Albums List</h1>
+    @foreach (var album in Model)
+    {
+        <p>Title: <span>@album.Name</span></p>
+        <p>Description: <span>@album.Description</span></p>
+        <p>Category: <span>@album.Category</span></p>
+        <hr />
+    }
 </body>
 </html>
