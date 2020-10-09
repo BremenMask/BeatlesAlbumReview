@@ -29,5 +29,14 @@ namespace ReviewsSite.Repositories
                 new Album(13, "Let It Be", "1970")
             };
         }
+        public IEnumerable<Album> GetAll()
+        {
+            return albumsList; 
+        }
+
+        public Album GetById(int id)
+        {
+            return albumsList.Single(c => c.Id == id);
+        }
     }
 }

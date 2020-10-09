@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ReviewsSite.Models;
+using ReviewsSite.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,11 @@ namespace ReviewsSite.Controllers
     {
         public ViewResult Index()
         {
-            Album album = new Album();
+            AlbumRepository albumRepo = new AlbumRepository();
 
-            return View(album);
+            var model = albumRepo.GetAll();
+
+            return View(model);
         }
     }
 }
