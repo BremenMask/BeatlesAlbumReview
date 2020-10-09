@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ReviewsSite.Models.Album>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Style/StyleSheet.css" rel="stylesheet" />
+    <title>Across the Universe</title>
+</head>
+<body>
+    <section class="container">
+        <h1>Beatles Albums'</h1>
+        @foreach (var album in Model)
+        {
+            <p class="title">Title: <span>@album.Name</span></p>
+            <p class="title">Description: <span>@album.Description</span></p>
+            <p class="title">Category: <span>@album.Category</span></p>
+            <hr />
+        }
+    </section>
+
+
+</body>
+</html>

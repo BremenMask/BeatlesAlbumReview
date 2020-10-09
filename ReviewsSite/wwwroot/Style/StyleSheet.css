@@ -1,0 +1,30 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cornflowerblue;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 5rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container p {
+    padding: 1rem 0;
+}
+
+.title {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
