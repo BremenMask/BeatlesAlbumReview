@@ -17,8 +17,8 @@
         @foreach (var album in Model)
         {
             <img src=/Images/@album.Image> 
-            <p class="title">Title: <span>@album.Name</span></p>
-            <p class="title">Description: <span>@album.Description</span></p>
+            <p class="title">Title: <a href="/Album/Details/@album.Id">@album.Name</a></p>
+            @*<p class="title">Description: <span>@album.Description</span></p>*@
             <p class="title">Category: <span>@album.Category</span></p>
             <hr />
         }
