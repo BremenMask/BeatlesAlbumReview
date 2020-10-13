@@ -11,18 +11,18 @@ namespace ReviewsSite.Tests
         Album sut;
         public AlbumTests()
         {
-            sut = new Album(1, "Album name", "Album description", "Album category");
+            sut = new Album(1, "Album name", "Album description", "Album category", "Review", "Image");
         }
 
         [Fact]
-        public void AlbumConstructor_Sets_Id_On_CourseModel()
+        public void AlbumConstructor_Sets_Id_On_AlbumModel()
         {
             int result = sut.Id;
             Assert.Equal(1, result);
         }
 
         [Fact]
-        public void AlbumConstructor_Sets_Name_On_CourseModel()
+        public void AlbumConstructor_Sets_Name_On_AlbumModel()
         {
             string result = sut.Name;
 
@@ -30,7 +30,7 @@ namespace ReviewsSite.Tests
         }
 
         [Fact]
-        public void AlbumConstructor_Sets_Description_On_CourseModel()
+        public void AlbumConstructor_Sets_Description_On_AlbumModel()
         {
             string result = sut.Description;
 
@@ -38,12 +38,27 @@ namespace ReviewsSite.Tests
         }
 
         [Fact]
-        public void AlbumConstructor_Sets_Category_On_CourseModel()
+        public void AlbumConstructor_Sets_Category_On_AlbumModel()
         {
             string result = sut.Category;
 
             Assert.Equal("Album category", result);
         }
 
+        [Fact]
+        public void AlbumConstructor_Sets_Review_On_AlbumModel()
+        {
+            string result = sut.Review;
+
+            Assert.Equal("Review", result);
+        }
+
+        [Fact]
+        public void AlbumConstructor_Sets_Image_On_AlbumModel()
+        {
+            string result = sut.Image;
+
+            Assert.Equal("Image", result);
+        }
     }
 }
