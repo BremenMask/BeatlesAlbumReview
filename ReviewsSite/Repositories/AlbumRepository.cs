@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ReviewsSite.Repositories
 {
-    public class AlbumRepository
+    public class AlbumRepository : IRepository<Album>
     {
         public List<Album> albumsList;
 

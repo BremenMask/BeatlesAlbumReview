@@ -12,7 +12,7 @@ namespace ReviewsSite.Tests
 
         public AlbumControllerTests()
         {
-            sut = new AlbumController();
+          //  sut = new AlbumController();
         }
 
         [Fact]
