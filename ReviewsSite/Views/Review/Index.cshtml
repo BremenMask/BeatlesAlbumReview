@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<ReviewsSite.Models.Review>
 @{
     Layout = null;
 }
@@ -8,8 +8,13 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>Reviews</title>
 </head>
 <body>
+    <h1> Reviews List</h1>
+    @foreach (var instructor in Model)
+    { 
+      /// <p>Name: <a href="/"</p>
+    }
 </body>
 </html>
