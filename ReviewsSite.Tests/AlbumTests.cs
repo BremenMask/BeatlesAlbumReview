@@ -11,7 +11,7 @@ namespace ReviewsSite.Tests
         Album sut;
         public AlbumTests()
         {
-            sut = new Album(1, "Album name", "Album description", "Album category", "Review", "Image");
+            sut = new Album(1, "Album name", "Album description", "Album category", "Image");
         }
 
         [Fact]
@@ -45,13 +45,13 @@ namespace ReviewsSite.Tests
             Assert.Equal("Album category", result);
         }
 
-        [Fact]
-        public void AlbumConstructor_Sets_Review_On_AlbumModel()
-        {
-            string result = sut.Review;
+        //[Fact]
+        //public void AlbumConstructor_Sets_Review_On_AlbumModel()
+        //{
+        //    string result = sut.Review;
 
-            Assert.Equal("Review", result);
-        }
+        //    Assert.Equal("Review", result);
+        //}
 
         [Fact]
         public void AlbumConstructor_Sets_Image_On_AlbumModel()

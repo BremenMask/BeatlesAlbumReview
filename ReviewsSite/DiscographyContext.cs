@@ -3,6 +3,7 @@ using ReviewsSite.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mime;
 using System.Threading.Tasks;
 
 namespace ReviewsSite
@@ -10,12 +11,14 @@ namespace ReviewsSite
     public class DiscographyContext : DbContext
     {
         public DbSet<Album> Albums { get; set; }
+        public DbSet<Review> Reviews { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         { 
             var connectionString = "Server=(localdb)\\mssqllocaldb;Database=DiscographyDB_102020;Trusted_Connection=True";
 
-            optionsBuilder.UseSqlServer(connectionString);
+            optionsBuilder.UseSqlServer(connectionString)
+                .UseLazyLoadingProxies();
 
             base.OnConfiguring(optionsBuilder);
 
@@ -140,6 +143,48 @@ namespace ReviewsSite
                     Image = "LetItBe.jpg",
                     Category = "Late Career"
                 });
+
+            modelBuilder.Entity<Review>().HasData(
+                new Review()
+                {
+                    Id = 1,
+                    Content = "This album is good.",
+                    ReviewerName = "Paul McCartney",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 7
+                },
+
+                new Review()
+                {
+                    Id = 2,
+                    Content = "This album is really good.",
+                    ReviewerName = "John Lennon",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 7
+                },
+
+                new Review()
+                {
+                    Id = 3,
+                    Content = "This album is great.",
+                    ReviewerName = "George Harrison",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 7
+                },
+
+                new Review()
+                {
+                    Id = 4,
+                    Content = "This album is really great.",
+                    ReviewerName = "Ringo Starr",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 7
+                }
+                );
 
             base.OnModelCreating(modelBuilder);
         }
