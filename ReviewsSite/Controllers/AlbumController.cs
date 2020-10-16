@@ -33,5 +33,10 @@ namespace ReviewsSite.Controllers
             return View(model);
         }
 
+        public ViewResult Reviews(int id)
+        {
+            var model = albumRepo.GetById(id);
+            return View(model);
+        }
     }
 }

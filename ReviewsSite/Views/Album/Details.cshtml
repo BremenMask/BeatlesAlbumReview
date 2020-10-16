@@ -15,13 +15,9 @@
     <img src=/Images/@Model.Image>
     <p>@Model.Category</p>
     <p>@Model.Description</p>
-    
-    @foreach (var review in Model.Reviews)
-    {
-    <p>@review.Content</p>
-    }
     <hr />
 
+    <a href="/Album/Reviews/@Model.Id">Album Reviews</a>
     <a href="/Album/Index">Return to Albums List</a>
 
 </body>
