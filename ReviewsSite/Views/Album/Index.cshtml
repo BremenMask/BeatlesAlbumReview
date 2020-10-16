@@ -13,15 +13,21 @@
 </head>
 <body>
     <section class="container">
-        <h1>Beatles Albums</h1>
-        @foreach (var album in Model)
-        {
-            <img height="500px" width="500px" src=/Images/@album.Image>
-            <p class="title">Title: <a href="/Album/Details/@album.Id">@album.Name</a></p>
-            @*<p class="title">Description: <span>@album.Description</span></p>*@<p class="title"><span></span></p><p class="title"><span></span></p><p class="title"><span></span></p><p class="title"><span></span></p>
-            <p class="title">Category: <span>@album.Category</span></p>
-            <hr />
-        }
+        <div class="card">
+            <div class="face">
+                <h1>Beatles Albums</h1>
+                <hr />
+                <span><a class="reviews" href="/Review/Index">Show Reviews</a></span>
+                <hr />
+                @foreach (var album in Model)
+                {
+                    <img src=/Images/@album.Image>
+                    <p class="title">Title: <a href="/Album/Details/@album.Id">@album.Name</a></p>
+                    <p class="title">Category: <span>@album.Category</span></p>
+                    <hr />
+                }
+            </div>
+        </div>
     </section>
 
 

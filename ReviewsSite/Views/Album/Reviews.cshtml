@@ -1,0 +1,29 @@
+﻿@model ReviewsSite.Models.Album
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Style/StyleSheet.css" rel="stylesheet" />
+    <title>Album Reviews</title>
+</head>
+<body>
+    <section class="container">
+        <h1>@Model.Name Reviews</h1>
+        <div class="reviews-content">
+            @foreach (var review in Model.Reviews)
+            {
+                <hr />
+                <p>Name: @review.ReviewerName</p>
+                <p>@review.Content</p>
+                <p>Date: @review.ReviewDate</p>
+                <p>Rating: @review.Rating out of 5</p>
+            }
+        </div>
+    </section>
+</body>
+</html>
