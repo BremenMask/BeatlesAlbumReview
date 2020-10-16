@@ -152,7 +152,7 @@ namespace ReviewsSite
                     ReviewerName = "Paul McCartney",
                     Rating = 5,
                     ReviewDate = "10/15/2020",
-                    AlbumId = 7
+                    AlbumId = 1
                 },
 
                 new Review()
@@ -162,7 +162,7 @@ namespace ReviewsSite
                     ReviewerName = "John Lennon",
                     Rating = 5,
                     ReviewDate = "10/15/2020",
-                    AlbumId = 7
+                    AlbumId = 1
                 },
 
                 new Review()
@@ -172,7 +172,7 @@ namespace ReviewsSite
                     ReviewerName = "George Harrison",
                     Rating = 5,
                     ReviewDate = "10/15/2020",
-                    AlbumId = 7
+                    AlbumId = 1
                 },
 
                 new Review()
@@ -182,8 +182,487 @@ namespace ReviewsSite
                     ReviewerName = "Ringo Starr",
                     Rating = 5,
                     ReviewDate = "10/15/2020",
+                    AlbumId = 1
+                },
+
+                new Review()
+                {
+                    Id = 5,
+                    Content = "This album is good.",
+                    ReviewerName = "Paul McCartney",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 2
+                },
+
+                new Review()
+                {
+                    Id = 6,
+                    Content = "This album is really good.",
+                    ReviewerName = "John Lennon",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 2
+                },
+
+                new Review()
+                {
+                    Id = 7,
+                    Content = "This album is great.",
+                    ReviewerName = "George Harrison",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 2
+                },
+
+                new Review()
+                {
+                    Id = 8,
+                    Content = "This album is really great.",
+                    ReviewerName = "Ringo Starr",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 2
+                },
+
+                new Review()
+                {
+                    Id = 9,
+                    Content = "This album is good.",
+                    ReviewerName = "Paul McCartney",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 3
+                },
+
+                new Review()
+                {
+                    Id = 10,
+                    Content = "This album is really good.",
+                    ReviewerName = "John Lennon",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 3
+                },
+
+                new Review()
+                {
+                    Id = 11,
+                    Content = "This album is great.",
+                    ReviewerName = "George Harrison",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 3
+                },
+
+                new Review()
+                {
+                    Id = 12,
+                    Content = "This album is really great.",
+                    ReviewerName = "Ringo Starr",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 3
+                },
+
+                new Review()
+                {
+                    Id = 13,
+                    Content = "This album is good.",
+                    ReviewerName = "Paul McCartney",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 4
+                },
+
+                new Review()
+                {
+                    Id = 14,
+                    Content = "This album is really good.",
+                    ReviewerName = "John Lennon",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 4
+                },
+
+                new Review()
+                {
+                    Id = 15,
+                    Content = "This album is great.",
+                    ReviewerName = "George Harrison",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 4
+                },
+
+                new Review()
+                {
+                    Id = 16,
+                    Content = "This album is really great.",
+                    ReviewerName = "Ringo Starr",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 4
+                },
+
+                new Review()
+                {
+                    Id = 17,
+                    Content = "This album is good.",
+                    ReviewerName = "Paul McCartney",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 5
+                },
+
+                new Review()
+                {
+                    Id = 18,
+                    Content = "This album is really good.",
+                    ReviewerName = "John Lennon",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 5
+                },
+
+                new Review()
+                {
+                    Id = 19,
+                    Content = "This album is great.",
+                    ReviewerName = "George Harrison",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 5
+                },
+
+                new Review()
+                {
+                    Id = 20,
+                    Content = "This album is really great.",
+                    ReviewerName = "Ringo Starr",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 5
+                },
+
+                new Review()
+                {
+                    Id = 21,
+                    Content = "This album is good.",
+                    ReviewerName = "Paul McCartney",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 6
+                },
+
+                new Review()
+                {
+                    Id = 22,
+                    Content = "This album is really good.",
+                    ReviewerName = "John Lennon",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 6
+                },
+
+                new Review()
+                {
+                    Id = 23,
+                    Content = "This album is great.",
+                    ReviewerName = "George Harrison",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 6
+                },
+
+                new Review()
+                {
+                    Id = 24,
+                    Content = "This album is really great.",
+                    ReviewerName = "Ringo Starr",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 6
+                },
+
+                new Review()
+                {
+                    Id = 25,
+                    Content = "This album is good.",
+                    ReviewerName = "Paul McCartney",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
                     AlbumId = 7
+                },
+
+                new Review()
+                {
+                    Id = 26,
+                    Content = "This album is really good.",
+                    ReviewerName = "John Lennon",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 7
+                },
+
+                new Review()
+                {
+                    Id = 27,
+                    Content = "This album is great.",
+                    ReviewerName = "George Harrison",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 7
+                },
+
+                new Review()
+                {
+                    Id = 28,
+                    Content = "This album is really great.",
+                    ReviewerName = "Ringo Starr",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 7
+                },
+
+                new Review()
+                {
+                    Id = 29,
+                    Content = "This album is good.",
+                    ReviewerName = "Paul McCartney",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 8
+                },
+
+                new Review()
+                {
+                    Id = 30,
+                    Content = "This album is really good.",
+                    ReviewerName = "John Lennon",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 8
+                },
+
+                new Review()
+                {
+                    Id = 31,
+                    Content = "This album is great.",
+                    ReviewerName = "George Harrison",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 8
+                },
+
+                new Review()
+                {
+                    Id = 32,
+                    Content = "This album is really great.",
+                    ReviewerName = "Ringo Starr",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 8
+                },
+
+                new Review()
+                {
+                    Id = 33,
+                    Content = "This album is good.",
+                    ReviewerName = "Paul McCartney",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 9
+                },
+
+                new Review()
+                {
+                    Id = 34,
+                    Content = "This album is really good.",
+                    ReviewerName = "John Lennon",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 9
+                },
+
+                new Review()
+                {
+                    Id = 35,
+                    Content = "This album is great.",
+                    ReviewerName = "George Harrison",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 9
+                },
+
+                new Review()
+                {
+                    Id = 36,
+                    Content = "This album is really great.",
+                    ReviewerName = "Ringo Starr",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 9
+                },
+                new Review()
+                {
+                    Id = 37,
+                    Content = "This album is good.",
+                    ReviewerName = "Paul McCartney",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 10
+                },
+
+                new Review()
+                {
+                    Id = 38,
+                    Content = "This album is really good.",
+                    ReviewerName = "John Lennon",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 10
+                },
+
+                new Review()
+                {
+                    Id = 39,
+                    Content = "This album is great.",
+                    ReviewerName = "George Harrison",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 10
+                },
+
+                new Review()
+                {
+                    Id = 40,
+                    Content = "This album is really great.",
+                    ReviewerName = "Ringo Starr",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 10
+                },
+
+                new Review()
+                {
+                    Id = 41,
+                    Content = "This album is good.",
+                    ReviewerName = "Paul McCartney",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 11
+                },
+
+                new Review()
+                {
+                    Id = 42,
+                    Content = "This album is really good.",
+                    ReviewerName = "John Lennon",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 11
+                },
+
+                new Review()
+                {
+                    Id = 43,
+                    Content = "This album is great.",
+                    ReviewerName = "George Harrison",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 11
+                },
+
+                new Review()
+                {
+                    Id = 44,
+                    Content = "This album is really great.",
+                    ReviewerName = "Ringo Starr",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 11
+                },
+                new Review()
+                {
+                    Id = 45,
+                    Content = "This album is good.",
+                    ReviewerName = "Paul McCartney",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 12
+                },
+
+                new Review()
+                {
+                    Id = 46,
+                    Content = "This album is really good.",
+                    ReviewerName = "John Lennon",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 12
+                },
+
+                new Review()
+                {
+                    Id = 47,
+                    Content = "This album is great.",
+                    ReviewerName = "George Harrison",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 12
+                },
+
+                new Review()
+                {
+                    Id = 48,
+                    Content = "This album is real.",
+                    ReviewerName = "Ringo Starr",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 12
+                },
+
+                new Review()
+                {
+                    Id = 49,
+                    Content = "This album is awesome because I wrote most of it",
+                    ReviewerName = "Paul McCartney",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 13
+                },
+
+                new Review()
+                {
+                    Id = 50,
+                    Content = "This album is really good, bro.",
+                    ReviewerName = "John Lennon",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 13
+                },
+
+                new Review()
+                {
+                    Id = 51,
+                    Content = "This album is cool, man.",
+                    ReviewerName = "George Harrison",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 13
+                },
+
+                new Review()
+                {
+                    Id = 52,
+                    Content = "This album is fine but we had to sue Paul to get it out.",
+                    ReviewerName = "Ringo Starr",
+                    Rating = 5,
+                    ReviewDate = "10/15/2020",
+                    AlbumId = 13
                 }
+
                 );
 
             base.OnModelCreating(modelBuilder);
