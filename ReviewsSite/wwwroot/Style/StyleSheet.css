@@ -10,12 +10,26 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #333;
+    line-height: 1.5;
 }
 
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #404040;
+}
+
+img {
+    width: auto;
+    height: 400px;
+    margin: 0 auto;
+    padding: 2rem 5rem;
+}
 .container {
     /*width: 1000px;*/
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: #eee;
 }
@@ -38,4 +52,10 @@ h1 {
     text-decoration: none;
     line-height: 1.6;
     font-size: 1.3rem;
+}
+
+.reviews-content {
+    padding: 1.2rem;
+    line-height: 1.75;
+    font-size: 1.5rem;
 }
