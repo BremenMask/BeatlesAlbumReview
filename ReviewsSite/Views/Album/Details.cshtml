@@ -8,18 +8,23 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="~/Style/StyleSheet.css" rel="stylesheet" />
     <title>Album Details</title>
 </head>
 <body>
-    <h1>@Model.Name</h1>
-    <img src=/Images/@Model.Image>
-    <p>@Model.Category</p>
-    <p>@Model.Description</p>
-    <hr />
+    <section class="container">
+        <div class="card">
+            <h1 class="title">@Model.Name</h1>
+            <img src=/Images/@Model.Image>
+            <p>@Model.Category</p>
+            <p>@Model.Description</p>
+            <hr />
 
-    <a href="/Album/Reviews/@Model.Id">Album Reviews</a>
-    <br />
-    <a href="/Album/Index">Return to Albums List</a>
+            <a href="/Album/Reviews/@Model.Id">Album Reviews</a>
+            <br />
+            <a href="/Album/Index">Return to Albums List</a>
+        </div>
+    </section>
 
 </body>
 </html>
