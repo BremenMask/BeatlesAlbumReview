@@ -1,4 +1,5 @@
-﻿using ReviewsSite.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using ReviewsSite.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace ReviewsSite.Repositories
 
         public IEnumerable<Review> GetAll()
         {
-            return db.Reviews;
+            return db.Reviews.Include("Album");
         }
 
         public Review GetById(int id)
