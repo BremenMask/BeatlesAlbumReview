@@ -1,5 +1,6 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,7 +23,7 @@ a {
 }
 
 hr {
-   margin: 1rem 0;
+    margin: 1rem 0;
 }
 
 h1 {
@@ -69,4 +70,46 @@ img {
 
 .review p {
     padding: 0.4rem 0;
+}
+
+/*Create Page*/
+
+.form-group {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.2rem;
+}
+
+.control-label {
+    padding-right: 1.3rem;
+}
+
+.form-control-content {
+    padding: 2rem;
+}
+
+.form-control {
+    
+}
+
+.btn {
+    margin: 0 auto;
+    padding: .5rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+.back-btn {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: .4rem .6rem;
+    font-size: 1rem;
 }
