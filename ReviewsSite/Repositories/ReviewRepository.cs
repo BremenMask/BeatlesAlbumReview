@@ -25,5 +25,11 @@ namespace ReviewsSite.Repositories
         {
             return db.Reviews.Single(c => c.Id == id);
         }
+
+        public void Create(Review review)
+        {
+            db.Reviews.Add(review);
+            db.SaveChanges();
+        }
     }
 }
