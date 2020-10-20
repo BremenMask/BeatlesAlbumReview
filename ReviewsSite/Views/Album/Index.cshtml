@@ -15,15 +15,15 @@
     <section class="container">
         <div class="card">
             <div class="face">
-                <h1 class="title">Beatles Albums</h1>
+                <h1>Beatles Albums</h1>
                 <hr />
-                <span><a class="reviews" href="/Review/Index">Show Reviews</a></span>
+                <span><a class="reviews" href="/Review/Index">All Reviews</a></span>
                 <hr />
                 @foreach (var album in Model)
                 {
-                    <img src=/Images/@album.Image>
-                    <p class="title">Title: <a href="/Album/Details/@album.Id">@album.Name</a></p>
-                    <p class="title">Category: <span>@album.Category</span></p>
+                    <a href="/Album/Details/@album.Id"><img src=/Images/@album.Image></a>
+                    <p class="index-title">Title: <strong><a href="/Album/Details/@album.Id">@album.Name</a></strong></p>
+                    <p class="category">Category: <span>@album.Category</span></p>
                     <hr />
                 }
             </div>

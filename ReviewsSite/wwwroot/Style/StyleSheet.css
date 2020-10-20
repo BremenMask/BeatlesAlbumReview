@@ -1,10 +1,12 @@
-﻿* {
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     background: #333;
     justify-content: center;
@@ -13,15 +15,19 @@ body {
     line-height: 1.5;
 }
 
-.title {
-    font-size: 6rem;
-    color: red;
-}
 
 a {
     text-decoration: none;
-    font-size: 1.5rem;
     color: #404040;
+}
+
+hr {
+   margin: 1rem 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
 }
 
 img {
@@ -32,7 +38,6 @@ img {
 }
 
 .container {
-    /*width: 1000px;*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -47,26 +52,21 @@ img {
         padding: 2rem;
     }
 
-    
-
-h1 {
-    text-align: center;
-    font-size: 6rem;
-}
-
-.reviews {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    line-height: 1.6;
-    font-size: 1.3rem;
-}
-
-.reviews-content {
-    padding: 1.2rem;
-    line-height: 1.75;
+.index-title {
     font-size: 1.5rem;
 }
 
+.category {
+    padding-bottom: 1rem;
+}
 
+/*Reviews sections*/
+
+.review-title {
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+}
+
+.review p {
+    padding: 0.4rem 0;
+}
