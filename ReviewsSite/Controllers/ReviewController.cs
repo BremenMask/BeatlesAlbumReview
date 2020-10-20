@@ -28,5 +28,24 @@ namespace ReviewsSite.Controllers
             var model = reviewRepo.GetById(id);
             return View(model);
         }
+
+        [HttpGet]
+        public ViewResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(Review review)
+        {
+            review.ReviewDate = DateTime.Now.ToString("MM/dd/yyyy");
+
+            if (ModelState.IsValid)
+            {
+                reviewRepo.Create(review);
+                return RedirectToAction("Index");
+            }
+            return View(review);
+        }
     }
 }
