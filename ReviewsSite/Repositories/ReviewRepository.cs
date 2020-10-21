@@ -31,5 +31,17 @@ namespace ReviewsSite.Repositories
             db.Reviews.Add(review);
             db.SaveChanges();
         }
+
+        public void Update(Review review)
+        {
+            db.Reviews.Update(review);
+            db.SaveChanges();
+        }
+
+        public void Delete(Review review)
+        {
+            db.Reviews.Remove(review);
+            db.SaveChanges();
+        }
     }
 }

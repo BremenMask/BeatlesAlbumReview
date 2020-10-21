@@ -28,5 +28,15 @@ namespace ReviewsSite.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public void Update(Album obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(Album obj)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
