@@ -10,5 +10,7 @@ namespace ReviewsSite.Repositories
         IEnumerable<T> GetAll();
         T GetById(int id);
         void Create(T obj);
+        void Update(T obj);
+        void Delete(T obj);
     }
 }

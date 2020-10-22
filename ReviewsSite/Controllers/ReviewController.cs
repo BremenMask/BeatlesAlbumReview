@@ -35,6 +35,13 @@ namespace ReviewsSite.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ViewResult CreateByAlbumId(int id)
+        {
+            ViewBag.AlbumId = id;
+            return View();
+        }
+
         [HttpPost]
         public ActionResult Create(Review review)
         {
@@ -43,9 +50,44 @@ namespace ReviewsSite.Controllers
             if (ModelState.IsValid)
             {
                 reviewRepo.Create(review);
-                return RedirectToAction("Index");
+                return RedirectToAction("Reviews", "Album", new { id = review.AlbumId });
             }
             return View(review);
+        }
+
+        [HttpGet]
+        public ViewResult Update(int id)
+        {
+            Review model = reviewRepo.GetById(id);
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Update(Review review)
+        {
+            review.ReviewDate = DateTime.Now.ToString("MM/dd/yyyy");
+
+            if (ModelState.IsValid)
+            {
+                reviewRepo.Update(review);
+                return RedirectToAction("Index", "Review", new { id = review.Id });
+            }
+            return View();
+        }
+
+        [HttpGet]
+        public ViewResult Delete(int id)
+        {
+            Review model = reviewRepo.GetById(id);
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Delete(Review review)
+        {
+            int albumId = review.AlbumId;
+            reviewRepo.Delete(review);
+            return RedirectToAction("Index");
         }
     }
 }
