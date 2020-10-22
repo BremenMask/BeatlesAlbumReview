@@ -16,13 +16,14 @@
         <div class="card">
                 <h1>Beatles Albums</h1>
                 <hr />
-                <a class="reviews" href="/Review/Index">All Reviews</a>
-                <br />
-                <a href="/Review/Create">Write a Review</a>
+                <div class="index-links">
+                    <a class="reviews index-link" href="/Review/Index">All Reviews</a>
+                    <a class="index-link" href="/Review/Create">Write a Review</a>
+                </div>
                 <hr />
                 @foreach (var album in Model)
                 {
-                    <a href="/Album/Details/@album.Id"><img src=/Images/@album.Image></a>
+                    <a class="img-a" href="/Album/Details/@album.Id"><img src=/Images/@album.Image></a>
                     <p class="index-title">Title: <strong><a href="/Album/Details/@album.Id">@album.Name</a></strong></p>
                     <p class="category">Category: <span>@album.Category</span></p>
                     <hr />

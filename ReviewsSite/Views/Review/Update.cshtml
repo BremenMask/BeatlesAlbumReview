@@ -46,7 +46,7 @@
             </div>*@
         <div class="form-group">
             <label asp-for="AlbumId" class="control-label"></label>@*&nbsp;&nbsp;*@
-            <select asp-for="AlbumId">
+            <select class="form-control" asp-for="AlbumId">
                 <option value="1">Please Please Me</option>
                 <option value="2">Meet the Beatles</option>
                 <option value="3">Hard Day's Night</option>
@@ -64,12 +64,12 @@
             @*<select asp-for="AlbumId" class="form-control" asp-items="ViewBag.AlbumId"></select>
         <span asp-validation-for="AlbumId" class="text-danger"></span>*@
         </div>
-            <div class="form-group">
-                <a class="back-btn btn" asp-action="Index"><button>Update</button></a>
+            <div class="button-group">
+                <a asp-action="Index"><input class="button" type="submit" value="Update"/></a>
             </div>
         </form>
         <div>
-            <a class="back-btn btn" asp-action="Index">Back to List</a>
+            <a asp-action="Index">Back to List</a>
         </div>
     </div>
 </div>

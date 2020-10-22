@@ -20,9 +20,11 @@
             <p>@Model.Description</p>
             <hr />
 
-            <p><a href="/Review/CreateByAlbumId/@Model.Id">Write a review for @Model.Name</a></p>
-            <p><a href="/Album/Reviews/@Model.Id">Album Reviews</a></p>
-            <p><a href="/Album/Index">Return to Albums List</a></p>
+            <div class="nav-links">
+                <a class="nav-link" href="/Review/CreateByAlbumId/@Model.Id">Write a review for @Model.Name</a>
+                <a class="nav-link" href="/Album/Reviews/@Model.Id">Album Reviews</a>
+                <a class="nav-link" href="/Album/Index">Return to Albums List</a>
+            </div>
         </div>
     </section>
 
