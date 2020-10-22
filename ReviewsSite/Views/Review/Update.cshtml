@@ -10,14 +10,17 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="~/Style/StyleSheet.css" rel="stylesheet" />
     <title>Update</title>
 </head>
 <body>
 
-<h4>Review</h4>
+
 <hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="container">
+    <div class="card">
+        <h1>Update Review</h1>
+        <hr />
         <form asp-action="Update">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
@@ -41,36 +44,37 @@
                 <input asp-for="ReviewDate" class="form-control" />
                 <span asp-validation-for="ReviewDate" class="text-danger"></span>
             </div>*@
-        <div class="form-group">
-            <label asp-for="AlbumId" class="control-label"></label>
-            <select asp-for="AlbumId">
-                <option value="1">Please Please Me</option>
-                <option value="2">Meet the Beatles</option>
-                <option value="3">Hard Day's Night</option>
-                <option value="4">Beatles for Sale</option>
-                <option value="5">Help!</option>
-                <option value="6">Rubber Soul</option>
-                <option value="7">Revolver</option>
-                <option value="8">Sgt. Pepper's Lonely Hearts Club Band</option>
-                <option value="9">Magical Mystery Tour</option>
-                <option value="10">White Album</option>
-                <option value="11">Yellow Submarine</option>
-                <option value="12">Abbey Road</option>
-                <option value="13">Let It Be</option>
-            </select>
-            @*<select asp-for="AlbumId" class="form-control" asp-items="ViewBag.AlbumId"></select>
-        <span asp-validation-for="AlbumId" class="text-danger"></span>*@
-        </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <label asp-for="AlbumId" class="control-label"></label>
+                <select asp-for="AlbumId">
+                    <option value="1">Please Please Me</option>
+                    <option value="2">Meet the Beatles</option>
+                    <option value="3">Hard Day's Night</option>
+                    <option value="4">Beatles for Sale</option>
+                    <option value="5">Help!</option>
+                    <option value="6">Rubber Soul</option>
+                    <option value="7">Revolver</option>
+                    <option value="8">Sgt. Pepper's Lonely Hearts Club Band</option>
+                    <option value="9">Magical Mystery Tour</option>
+                    <option value="10">White Album</option>
+                    <option value="11">Yellow Submarine</option>
+                    <option value="12">Abbey Road</option>
+                    <option value="13">Let It Be</option>
+                </select>
+                @*<select asp-for="AlbumId" class="form-control" asp-items="ViewBag.AlbumId"></select>
+                <span asp-validation-for="AlbumId" class="text-danger"></span>*@
+            </div>
+            <div class="form-group">
+                <a class="back-btn btn" asp-action="Index"><button>Back to List</button></a>
             </div>
         </form>
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
 
 </body>
 </html>
