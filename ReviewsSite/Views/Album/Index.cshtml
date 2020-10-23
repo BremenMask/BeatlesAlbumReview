@@ -9,26 +9,32 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link href="~/Style/StyleSheet.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/85837378cf.js" crossorigin="anonymous"></script>
     <title>Across the Universe</title>
 </head>
 <body>
     <section class="container">
         <div class="card">
-                <h1>Beatles Albums</h1>
-                <hr />
-                <div class="index-links">
-                    <a class="reviews index-link" href="/Review/Index">All Reviews</a>
-                    <a class="index-link" href="/Review/Create">Write a Review</a>
-                </div>
-                <hr />
-                @foreach (var album in Model)
-                {
-                    <a class="img-a" href="/Album/Details/@album.Id"><img src=/Images/@album.Image></a>
-                    <p class="index-title">Title: <strong><a href="/Album/Details/@album.Id">@album.Name</a></strong></p>
-                    <p class="category">Category: <span>@album.Category</span></p>
-                    <hr />
-                }
+            <a name="top"></a>
+            <h1>Beatles Albums</h1>
+            <hr />
+            <div class="index-links">
+                <a class="index-link link" href="/Review/Index">All Reviews</a>
+                <a class="index-link link" href="/Review/Create">Write a Review</a>
             </div>
+            <hr />
+            @foreach (var album in Model)
+            {
+                <a class="img-a" href="/Album/Details/@album.Id"><img src=/Images/@album.Image></a>
+                <p><a class="album-name link" href="/Album/Details/@album.Id">@album.Name</a></p>
+                <p class="category">Category: <span>@album.Category</span></p>
+                <hr />
+            }
+        <a class="back-to-top" href="#top">
+            <i class="fas fa-arrow-circle-up"></i>
+            <p>Back to Top</p>
+        </a>
+        </div>
     </section>
 
 

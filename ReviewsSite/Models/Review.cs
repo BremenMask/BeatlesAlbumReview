@@ -14,7 +14,10 @@ namespace ReviewsSite.Models
         [Required]
         [Display(Name = "Author")]
         public string ReviewerName { get; set; }
+        [Range(1, 5)]
+        [Display(Name = "Rating out of 5")]
         public int Rating { get; set; }
+        [Display(Name = "Date")]
         public string ReviewDate { get; set; }
         [Display(Name = "Album")]
         public int AlbumId { get; set; }

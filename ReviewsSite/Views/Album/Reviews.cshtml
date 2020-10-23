@@ -9,35 +9,39 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <link href="~/Style/StyleSheet.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/85837378cf.js" crossorigin="anonymous"></script>
     <title>Album Reviews</title>
 </head>
 <body>
     <section class="container">
         <div class="card">
+            <a name="top"></a>
             <h1 class="review-title">@Model.Name Reviews</h1>
+            <hr />
             <div class="index-links">
-                <a href="/Review/Create">Write a Review</a>
-                <br />
-                <a href="/Album/Index/">Return to Home</a>
-                <br />
-                <a href="/Album/Details/@Model.Id">Return to Details</a>
-                <hr />
+                <a class="index-link link" href="/Review/Create">Write a Review</a>
+                <a class="index-link link" href="/Album/Index/">Albums List</a>
+                <a class="index-link link" href="/Album/Details/@Model.Id">Return to Details</a>
             </div>
             <hr />
             <div class="review">
                 @foreach (var review in Model.Reviews)
                 {
-                    <p>Name: @review.ReviewerName</p>
-                    <p>@review.Content</p>
+                    <p>Author: @review.ReviewerName</p>
+                    <p>"@review.Content"</p>
                     <p>Date: @review.ReviewDate</p>
                     <p>Rating: @review.Rating out of 5</p>
                     <div class="index-links">
                         <br />
-                        <a class="ud-link" href="/Review/Update/@review.Id">Update Review</a>
-                        <a class="ud-link" href="/Review/Delete/@review.Id">Delete Review</a>
+                        <a class="ud-link link" href="/Review/Update/@review.Id">Update Review</a>
+                        <a class="ud-link link" href="/Review/Delete/@review.Id">Delete Review</a>
                     </div>
                     <hr />
                 }
+                <a class="back-to-top" href="#top">
+                    <i class="fas fa-arrow-circle-up"></i>
+                    <p>Back to Top</p>
+                </a>
             </div>
         </div>
     </section>

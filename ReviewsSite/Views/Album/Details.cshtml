@@ -15,15 +15,15 @@
     <section class="container">
         <div class="card">
             <h1 class="title">@Model.Name</h1>
+            <hr />
             <img src=/Images/@Model.Image>
-            <p>@Model.Category</p>
-            <p>@Model.Description</p>
+            <p>@Model.Category (@Model.Description)</p>
             <hr />
 
             <div class="nav-links">
-                <a class="nav-link" href="/Review/CreateByAlbumId/@Model.Id">Write a review for @Model.Name</a>
-                <a class="nav-link" href="/Album/Reviews/@Model.Id">Album Reviews</a>
-                <a class="nav-link" href="/Album/Index">Return to Albums List</a>
+                <a class="nav-link link" href="/Review/CreateByAlbumId/@Model.Id">Write a review for @Model.Name</a>
+                <a class="nav-link link" href="/Album/Reviews/@Model.Id">@Model.Name Reviews</a>
+                <a class="nav-link link" href="/Album/Index">Albums List</a>
             </div>
         </div>
     </section>

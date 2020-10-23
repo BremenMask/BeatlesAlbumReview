@@ -16,69 +16,6 @@ body {
     line-height: 1.5;
 }
 
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-/*a:hover {
-    border-bottom: #333 .05rem solid;
-}*/
-
-hr {
-    margin: 1rem 0;
-}
-
-.index-links {
-    display: flex;
-    justify-content: space-evenly;
-    font-weight: 600;
-}
-
-.index-link {
-    border-bottom: #333 .05rem solid;
-}
-
-
-.album-link {
-    font-weight: 600;
-}
-
-.nav-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.nav-link {
-    margin: .6rem;
-}
-
-.ud-link {
-    margin: .75rem auto 0 auto;
-}
-
-.ud-link:hover {
-    border-bottom: none;
-}
-
-h1 {
-    text-align: center;
-    font-size: 3rem;
-}
-
-img {
-    width: auto;
-    height: 400px;
-    margin: 0 auto;
-    padding: 2rem 5rem;
-}
-
-.img-a:hover {
-    border-bottom: none;
-}
-
 .container {
     position: relative;
     display: flex;
@@ -93,8 +30,81 @@ img {
         padding: 2rem;
     }
 
-.index-title {
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+hr {
+    margin: 1rem 0;
+}
+
+.index-links {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 600;
+}
+
+.index-link {
+    border-bottom: #333 .05rem solid;
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+
+
+.link:hover {
+    background-color: lightgray;
+}
+
+.album-link {
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.nav-link {
+    margin: .6rem;
+    font-weight: 600;
+}
+
+.ud-link {
+    margin: 1rem 0 .5rem 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem 6rem 0 6rem;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+img {
+    width: auto;
+    height: 400px;
+    margin: 0 auto;
+    padding: 1rem 5rem;
+}
+
+.img-a:hover {
+    border-bottom: none;
+}
+
+
+.album-name {
     font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .category {
@@ -105,7 +115,6 @@ img {
 
 .review-title {
     font-size: 2.5rem;
-    padding: 1.5rem 0;
 }
 
 .review p {
@@ -117,6 +126,11 @@ img {
 textarea {
     font-family: 'Montserrat', sans-serif;
     font-size: .8rem;
+    padding: .25rem
+}
+
+input {
+    padding: .25rem;
 }
 
 .form-group {
@@ -128,6 +142,10 @@ textarea {
 .content-box {
     height: 7rem;
     width: 20rem;
+}
+
+select {
+font-family: 'Montserrat', sans-serif;
 }
 
 label {
@@ -142,18 +160,43 @@ label {
     font-size: .8rem;
 }
 
+.text-danger {
+    color: darkred;
+    text-align: center;
+    font-size: small;
+}
+
 .button {
     margin: 0 auto;
     padding: .4rem .6rem;
     font-size: 1rem;
 }
 
-/*.button:hover {
-    border: .05rem;
-}*/
-
 .button-group {
     display: flex;
     justify-content: center;
     margin: 1.5rem auto;
+}
+
+.create-by-album-button {
+    margin-top: 0;
+}
+
+/*Delete*/
+.delete-info p {
+    padding-top: .5rem;
+}
+
+.back-to-top {
+    position: fixed;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    color: white;
+    font-size: .75rem;
+    text-align: center;
+}
+
+.back-to-top p {
+    padding: 0;
 }

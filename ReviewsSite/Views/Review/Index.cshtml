@@ -8,33 +8,43 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link href="~/Style/StyleSheet.css" rel="stylesheet"/>
+    <link href="~/Style/StyleSheet.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/85837378cf.js" crossorigin="anonymous"></script>
     <title>Reviews</title>
 </head>
 <body>
     <section class="container">
         <div class="card">
-            <a class="index-link" href="/Album/Index/">Return to Home</a>
-            <br />
-            <h1 class="review-title">Reviews List</h1>
-            <hr/>
+            <a name="top"></a>
+            <h1 class="review-title">All Reviews</h1>
+            <hr />
+            <div class="index-links">
+                <a class="index-link link" href="/Review/Create">Write a Review</a>
+                <a class="index-link link" href="/Album/Index/">Albums List</a>
+            </div>
+            <hr />
             <div class="review">
                 @foreach (var review in Model)
                 {
-                    <p>Name: @review.ReviewerName</p>
-                    <p>Album: <a class="album-link" href="/Album/Details/@review.AlbumId">@review.Album.Name</a></p>
-                    <p>@review.Content</p>
+                    <p>Author: @review.ReviewerName</p>
+                    <p>Album: <a class="album-link link" href="/Album/Details/@review.AlbumId">@review.Album.Name</a></p>
+                    <p>"@review.Content"</p>
                     <p>Date: @review.ReviewDate</p>
                     <p>Rating: @review.Rating out of 5</p>
                     <div class="index-links">
-                        <br />
-                        <a class="ud-link" href="/Review/Update/@review.Id">Update Review</a>
-                        <a class="ud-link" href="/Review/Delete/@review.Id">Delete Review</a>
+                        <a class="ud-link link" href="/Review/Update/@review.Id">Update Review</a>
+                        <a class="ud-link link" href="/Review/Delete/@review.Id">Delete Review</a>
                     </div>
                     <hr />
                 }
+
+                <a class="back-to-top" href="#top">
+                    <i class="fas fa-arrow-circle-up"></i>
+                    <p>Back to Top</p>
+                </a>
+
             </div>
         </div>
-    </section>
+</section>
 </body>
 </html>
