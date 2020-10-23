@@ -52,7 +52,13 @@
                     </div>
                     <div class="form-group">
                         <label asp-for="Rating" class="control-label"></label>
-                        <input asp-for="Rating" class="form-control" />
+                        <select asp-for="Rating" class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
                         <span asp-validation-for="Rating" class="text-danger"></span>
                     </div>
                     <div class="button-group">
